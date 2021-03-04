@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>靈龜八法</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <style type="text/css">
+        .box {
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            padding: 10px 15px;
+            background-color: rgb(22, 22, 22);
+            color: rgb(226, 226, 226);
+            width: max-content;
+            position: relative;
+            font-size: 18pt;
+        }
+        .split {
+            border-width: none;
+            border-top: 2px solid goldenrod;
+            margin: 5px 0;
+            width: 100%;
+        }
+        .note {
+            color: rgb(255, 94, 0);
+        }
+        .channel, .number {
+            color: #888888;
+        }
+        .right {
+            float: right;
+        }
+        #today {
+            font-size: 80pt;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">僅適用於西元 2000 ～ 2099 年</div>
+    <div class="box">
+        <div>
+            <span><span id="year"></span>年</span>
+            <span><span id="month"></span>月</span>
+            <span class="right">星期<span id="week"></span></span>
+        </div>
+        <div id="today"></div>
+        <div class="split"></div>
+        <div>
+            <span class="" id="ganzhi"></span>
+            <span class="right" id="time"></span>
+        </div>
+        <div class="split"></div>
+        <div>
+            <div>
+                <div>靈龜八法：<span id="lingguinum"></span></div>
+                <table id="linggui1" class="linggui">
+                    <tr>
+                        <td class="number">坎 １</td>
+                        <td>申脈</td>
+                        <td class="channel">足太陽膀胱經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">兌 ７</td>
+                        <td>後溪</td>
+                        <td class="channel">手太陽小腸經</td>
+                    </tr>
+                </table>
+                <table id="linggui2" class="linggui">
+                    <tr>
+                        <td class="number">坤 ２</td>
+                        <td>照海</td>
+                        <td class="channel">足少陰腎經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">離 ９</td>
+                        <td>列缺</td>
+                        <td class="channel">手太陰肺經</td>
+                    </tr>
+                </table>
+                <table id="linggui3" class="linggui">
+                    <tr>
+                        <td class="number">震 ３</td>
+                        <td>外關</td>
+                        <td class="channel">手少陽三焦經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">巽 ４</td>
+                        <td>臨泣</td>
+                        <td class="channel">足少陽膽經</td>
+                    </tr>
+                </table>
+                <table id="linggui4" class="linggui">
+                    <tr>
+                        <td class="number">巽 ４</td>
+                        <td>臨泣</td>
+                        <td class="channel">足少陽膽經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">震 ３</td>
+                        <td>外關</td>
+                        <td class="channel">手少陽三焦經</td>
+                    </tr>
+                </table>
+                <table id="linggui5" class="linggui">
+                    <tr>
+                        <td>男</td>
+                        <td class="number">坤 ２</td>
+                        <td>照海</td>
+                        <td class="channel">足少陰腎經</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="number">離 ９</td>
+                        <td>列缺</td>
+                        <td class="channel">手太陰肺經</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="3" style="height: 5px;"><div class="split"></div></td>
+                    </tr>
+                    <tr>
+                        <td>女</td>
+                        <td class="number">艮 ８</td>
+                        <td>內關</td>
+                        <td class="channel">手厥陰心包經</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="number">乾 ６</td>
+                        <td>公孫</td>
+                        <td class="channel">足太陰脾經</td>
+                    </tr>
+                </table>
+                <table id="linggui6" class="linggui">
+                    <tr>
+                        <td class="number">乾 ６</td>
+                        <td>公孫</td>
+                        <td class="channel">足太陰脾經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">艮 ８</td>
+                        <td>內關</td>
+                        <td class="channel">手厥陰心包經</td>
+                    </tr>
+                </table>
+                <table id="linggui7" class="linggui">
+                    <tr>
+                        <td class="number">兌 ７</td>
+                        <td>後溪</td>
+                        <td class="channel">手太陽小腸經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">坎 １</td>
+                        <td>申脈</td>
+                        <td class="channel">足太陽膀胱經</td>
+                    </tr>
+                </table>
+                <table id="linggui8" class="linggui">
+                    <tr>
+                        <td class="number">艮 ８</td>
+                        <td>內關</td>
+                        <td class="channel">手厥陰心包經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">乾 ６</td>
+                        <td>公孫</td>
+                        <td class="channel">足太陰脾經</td>
+                    </tr>
+                </table>
+                <table id="linggui9" class="linggui">
+                    <tr>
+                        <td class="number">離 ９</td>
+                        <td>列缺</td>
+                        <td class="channel">手太陰肺經</td>
+                    </tr>
+                    <tr>
+                        <td class="number">坤 ２</td>
+                        <td>照海</td>
+                        <td class="channel">足少陰腎經</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function genToday() {
+            var d = new Date();
+            var wn = "日一二三四五六";
+            document.getElementById("year").innerText = d.getFullYear();
+            document.getElementById("month").innerText = d.getMonth() + 1;
+            document.getElementById("week").innerText = wn[d.getDay()];
+            document.getElementById("today").innerText = d.getDate();
+            document.getElementById("time").innerText = d.getHours() + " 點";
+        }
+
+        function genLingGuiBaFa() {
+            var tiangan = "癸甲乙丙丁戊己庚辛壬";
+            var dizhi = "亥子丑寅卯辰巳午未申酉戌";
+            var ling = {
+                // 23, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21
+                "甲子": [8, 6, 4, 2, 9, 3, 7, 5, 3, 1, 4, 2],
+                "乙丑": [5, 3, 1, 4, 2, 6, 4, 2, 5, 3, 1, 5],
+                "丙寅": [2, 5, 3, 1, 8, 6, 6, 4, 2, 9, 7, 1],
+                "丁卯": [3, 1, 5, 3, 6, 4, 2, 6, 4, 1, 5, 3],
+                "戊辰": [5, 3, 6, 4, 2, 9, 4, 7, 5, 3, 1, 8],
+                "己巳": [5, 3, 1, 5, 3, 6, 4, 2, 6, 4, 1, 5],
+                "庚午": [5, 3, 1, 4, 2, 9, 4, 2, 5, 3, 1, 8],
+                "辛未": [1, 4, 2, 6, 4, 2, 5, 3, 1, 5, 3, 6],
+                "壬申": [7, 5, 3, 1, 4, 2, 6, 4, 2, 5, 3, 1],
+                "癸酉": [1, 5, 2, 6, 4, 2, 6, 3, 1, 5, 3, 1],
+                "甲戌": [2, 9, 7, 5, 3, 6, 1, 8, 3, 4, 7, 5],
+                "乙亥": [2, 6, 4, 1, 5, 3, 1, 5, 2, 6, 4, 2],
+                "丙子": [1, 4, 2, 9, 7, 5, 5, 3, 1, 8, 6, 9],
+                "丁丑": [5, 3, 1, 5, 2, 6, 4, 2, 6, 3, 1, 5],
+                "戊寅": [3, 1, 4, 2, 9, 7, 2, 5, 3, 1, 8, 6],
+                "己卯": [6, 4, 2, 6, 4, 1, 5, 3, 1, 5, 2, 6],
+                "庚辰": [8, 6, 4, 7, 5, 3, 7, 5, 8, 6, 4, 2],
+                "辛巳": [4, 1, 5, 3, 1, 5, 2, 6, 4, 2, 6, 3],
+                "壬午": [5, 3, 1, 8, 2, 9, 4, 2, 9, 3, 1, 8],
+                "癸未": [2, 6, 3, 1, 5, 3, 1, 4, 2, 6, 4, 2],
+                "甲申": [1, 8, 6, 4, 2, 5, 9, 7, 5, 3, 6, 4],
+                "乙酉": [4, 2, 6, 3, 1, 5, 3, 1, 4, 2, 6, 4],
+                "丙戌": [4, 7, 5, 3, 1, 8, 8, 6, 4, 2, 9, 3],
+                "丁亥": [2, 6, 4, 2, 5, 3, 1, 5, 3, 6, 4, 2],
+                "戊子": [2, 9, 3, 1, 8, 6, 1, 4, 2, 9, 7, 5],
+                "己丑": [2, 6, 4, 2, 6, 3, 1, 5, 3, 1, 4, 2],
+                "庚寅": [6, 4, 2, 5, 3, 1, 5, 3, 6, 4, 2, 9],
+                "辛卯": [5, 2, 6, 4, 2, 6, 3, 1, 5, 3, 1, 4],
+                "壬辰": [8, 6, 4, 2, 5, 3, 7, 5, 3, 6, 4, 2],
+                "癸巳": [5, 3, 6, 4, 2, 6, 4, 1, 5, 3, 1, 5],
+                "甲午": [8, 6, 4, 2, 9, 3, 7, 5, 3, 1, 4, 2],
+                "乙未": [5, 3, 1, 4, 2, 6, 4, 2, 5, 3, 1, 5],
+                "丙申": [3, 6, 4, 2, 9, 7, 7, 5, 3, 1, 8, 2],
+                "丁酉": [4, 2, 6, 4, 1, 5, 3, 1, 5, 2, 6, 4],
+                "戊戌": [5, 3, 6, 4, 2, 9, 4, 7, 5, 3, 1, 8],
+                "己亥": [5, 3, 1, 5, 3, 6, 4, 2, 6, 4, 1, 5],
+                "庚子": [5, 3, 1, 4, 2, 9, 4, 2, 5, 3, 1, 8],
+                "辛丑": [1, 4, 2, 6, 4, 2, 5, 3, 1, 5, 3, 6],
+                "壬寅": [6, 4, 2, 9, 3, 1, 5, 3, 1, 4, 2, 9],
+                "癸卯": [6, 4, 1, 5, 3, 1, 5, 2, 6, 4, 2, 6],
+                "甲辰": [2, 9, 7, 5, 3, 6, 1, 8, 6, 4, 7, 5],
+                "乙巳": [2, 6, 4, 1, 5, 3, 1, 5, 2, 6, 4, 2],
+                "丙午": [1, 4, 2, 9, 7, 5, 5, 3, 1, 8, 6, 9],
+                "丁未": [5, 3, 1, 5, 2, 6, 4, 2, 6, 3, 1, 5],
+                "戊申": [4, 2, 5, 3, 1, 8, 3, 6, 4, 2, 9, 7],
+                "己酉": [1, 5, 3, 1, 5, 2, 6, 4, 2, 6, 3, 1],
+                "庚戌": [8, 6, 4, 7, 5, 3, 7, 5, 8, 6, 4, 2],
+                "辛亥": [4, 1, 5, 3, 1, 5, 2, 6, 4, 2, 6, 3],
+                "壬子": [5, 3, 1, 8, 2, 9, 4, 2, 9, 3, 1, 8],
+                "癸丑": [2, 6, 3, 1, 5, 3, 1, 4, 2, 6, 4, 2],
+                "甲寅": [9, 7, 5, 3, 1, 4, 8, 6, 4, 2, 5, 3],
+                "乙卯": [3, 1, 5, 2, 6, 4, 2, 6, 3, 1, 5, 3],
+                "丙辰": [4, 7, 5, 3, 1, 8, 8, 6, 4, 2, 9, 3],
+                "丁巳": [2, 6, 4, 2, 5, 3, 1, 5, 3, 6, 4, 2],
+                "戊午": [2, 9, 3, 1, 8, 6, 1, 4, 2, 9, 7, 5],
+                "己未": [2, 6, 4, 2, 6, 3, 1, 5, 3, 1, 4, 2],
+                "庚申": [7, 5, 3, 6, 4, 2, 6, 4, 7, 5, 3, 1],
+                "辛酉": [6, 3, 1, 5, 3, 1, 4, 2, 6, 4, 2, 5],
+                "壬戌": [8, 6, 4, 2, 5, 3, 7, 5, 3, 6, 4, 2],
+                "癸亥": [5, 3, 6, 4, 2, 6, 4, 1, 5, 3, 1, 5]
+            };
+            // var ji = [
+            //     '',
+            //     '[坎 １] <span>申脈</span> (足太陽膀胱經)、[兌 ７] <span>後溪</span> (手太陽小腸經)',
+            //     '[坤 ２] <span>照海</span> (足少陰腎經)、[離 ９] <span>列缺</span> (手太陰肺經)',
+            //     '[震 ３] <span>外關</span> (手少陽三焦經)、[巽 ４] <span>臨泣</span> (足少陽膽經)',
+            //     '[巽 ４] <span>臨泣</span> (足少陽膽經)、[震 ３] <span>外關</span> (手少陽三焦經)',
+            //     '男：[坤 ２] <span>照海</span> (足少陰腎經)、[離 ９] <span>列缺</span> (手太陰肺經)<br>女：[艮 ８] <span>內關</span> (手厥陰心包經)、[乾 ６] <span>公孫</span> (足太陰脾經)',
+            //     '[乾 ６] <span>公孫</span> (足太陰脾經)、[艮 ８] <span>內關</span> (手厥陰心包經)',
+            //     '[兌 ７] <span>後溪</span> (手太陽小腸經)、[坎 １] <span>申脈</span> (足太陽膀胱經)',
+            //     '[艮 ８] <span>內關</span> (手厥陰心包經)、[乾 ６] <span>公孫</span> (足太陰脾經)',
+            //     '[離 ９] <span>列缺</span> (手太陰肺經)、[坤 ２] <span>照海</span> (足少陰腎經)'
+            // ];
+
+            // 計算一月一號到今天總共相差幾天
+            var d = new Date("2021-03-05 00:00:00");
+            var d0 = new Date(d.getFullYear() + '-01-01 12:00:00');
+            var d1 = new Date(d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + ' 12:00:00');
+            var dd = parseInt((d1 - d0)/1000/60/60/24) + 1;
+            
+            // 取得年份後兩位數
+            var s = d.getFullYear().toString();
+            var y = (s[2] + s[3]) * 1;
+
+            // 計算日干支
+            var num = parseInt((y + 7) * 5 + 15 + ((y + 19) / 4));
+            var n = (num + dd) % 60;
+
+            // 顯示干支日
+            var ds = tiangan[n % 10] + dizhi[n % 12];
+            document.getElementById("ganzhi").innerText = ds + "日";
+
+            // 顯示靈龜八法當前時辰的穴位
+            var idx = Math.ceil(d.getHours() / 2) % 12;
+            document.getElementById("lingguinum").innerText = ling[ds][idx];
+
+            var os = document.getElementsByClassName('linggui');
+            for (var i = 0; i < os.length; i++) {
+                os[i].style.display = "none";
+            }
+            document.getElementById("linggui" + ling[ds][idx]).style = "display:;";
+        }
+
+        genToday();
+        genLingGuiBaFa();
+    </script>
+</body>
+
+</html>
