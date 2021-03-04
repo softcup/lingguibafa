@@ -274,7 +274,7 @@
             // ];
 
             // 計算一月一號到今天總共相差幾天
-            var d = new Date("2021-03-05 00:00:00");
+            var d = new Date();
             var d0 = new Date(d.getFullYear() + '-01-01 12:00:00');
             var d1 = new Date(d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + ' 12:00:00');
             var dd = parseInt((d1 - d0)/1000/60/60/24) + 1;
