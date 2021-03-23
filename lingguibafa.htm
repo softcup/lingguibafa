@@ -304,6 +304,11 @@
 
         genToday();
         genLingGuiBaFa();
+
+        setInterval(function () {
+            genToday();
+            genLingGuiBaFa();
+        }, 30000);
     </script>
 </body>
 
