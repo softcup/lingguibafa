@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.box {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: rgb(22, 22, 22);
+    color: rgb(226, 226, 226);
+    width: fit-content;
+    position: relative;
+    font-size: 18pt;
+}
+
+.split {
+    border-width: none;
+    border-top: 2px solid goldenrod;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.note {
+    color: rgb(255, 94, 0);
+}
+
+.channel, .number {
+    color: #888888;
+}
+
+.right {
+    float: right;
+}
+
+#today {
+    font-size: 80pt;
+    text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+    .box {
+        width: max-content;
+    }
+}

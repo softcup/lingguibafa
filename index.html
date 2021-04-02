@@ -4,37 +4,7 @@
     <title>靈龜八法</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <style type="text/css">
-        .box {
-            border: 1px solid #cccccc;
-            border-radius: 10px;
-            padding: 10px 15px;
-            background-color: rgb(22, 22, 22);
-            color: rgb(226, 226, 226);
-            width: max-content;
-            position: relative;
-            font-size: 18pt;
-        }
-        .split {
-            border-width: none;
-            border-top: 2px solid goldenrod;
-            margin: 5px 0;
-            width: 100%;
-        }
-        .note {
-            color: rgb(255, 94, 0);
-        }
-        .channel, .number {
-            color: #888888;
-        }
-        .right {
-            float: right;
-        }
-        #today {
-            font-size: 80pt;
-            text-align: center;
-        }
-    </style>
+    <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="note">僅適用於西元 2000 ～ 2099 年</div>
@@ -47,7 +17,9 @@
         <div id="today"></div>
         <div class="split"></div>
         <div>
-            <span class="" id="ganzhi"></span>
+<!--            <span class="" id="yganzhi"></span>-->
+<!--            <span class="" id="mganzhi"></span>-->
+            <span class="" id="dganzhi"></span>
             <span class="right" id="time"></span>
         </div>
         <div class="split"></div>
@@ -287,9 +259,9 @@
             var num = parseInt((y + 7) * 5 + 15 + ((y + 19) / 4));
             var n = (num + dd) % 60;
 
-            // 顯示干支日
+            // 顯示日干支
             var ds = tiangan[n % 10] + dizhi[n % 12];
-            document.getElementById("ganzhi").innerText = ds + "日";
+            document.getElementById("dganzhi").innerText = ds + "日";
 
             // 顯示靈龜八法當前時辰的穴位
             var idx = Math.ceil(d.getHours() / 2) % 12;
@@ -300,6 +272,11 @@
                 os[i].style.display = "none";
             }
             document.getElementById("linggui" + ling[ds][idx]).style.display = "";
+
+            // 計算年干支
+            // n = d.getFullYear() - 3;
+            // ds = tiangan[n % 10] + dizhi[n % 12];
+            // document.getElementById("yganzhi").innerText = ds + "年";
         }
 
         genToday();
