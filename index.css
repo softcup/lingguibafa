@@ -26,6 +26,10 @@
     color: #888888;
 }
 
+.meridian {
+    white-space: nowrap;
+}
+
 .right {
     float: right;
 }

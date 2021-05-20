@@ -17,9 +17,7 @@
         <div id="today"></div>
         <div class="split"></div>
         <div>
-<!--            <span class="" id="yganzhi"></span>-->
-<!--            <span class="" id="mganzhi"></span>-->
-            <span class="" id="dganzhi"></span>
+            <span class="" id="ganzhi"></span>
             <span class="right" id="time"></span>
         </div>
         <div class="split"></div>
@@ -29,48 +27,48 @@
                 <table id="linggui1" class="linggui">
                     <tr>
                         <td class="number">坎 １</td>
-                        <td>申脈</td>
+                        <td class="meridian">申脈</td>
                         <td class="channel">足太陽膀胱經</td>
                     </tr>
                     <tr>
                         <td class="number">兌 ７</td>
-                        <td>後溪</td>
+                        <td class="meridian">後溪</td>
                         <td class="channel">手太陽小腸經</td>
                     </tr>
                 </table>
                 <table id="linggui2" class="linggui">
                     <tr>
                         <td class="number">坤 ２</td>
-                        <td>照海</td>
+                        <td class="meridian">照海</td>
                         <td class="channel">足少陰腎經</td>
                     </tr>
                     <tr>
                         <td class="number">離 ９</td>
-                        <td>列缺</td>
+                        <td class="meridian">列缺</td>
                         <td class="channel">手太陰肺經</td>
                     </tr>
                 </table>
                 <table id="linggui3" class="linggui">
                     <tr>
                         <td class="number">震 ３</td>
-                        <td>外關</td>
+                        <td class="meridian">外關</td>
                         <td class="channel">手少陽三焦經</td>
                     </tr>
                     <tr>
                         <td class="number">巽 ４</td>
-                        <td>臨泣</td>
+                        <td class="meridian">臨泣</td>
                         <td class="channel">足少陽膽經</td>
                     </tr>
                 </table>
                 <table id="linggui4" class="linggui">
                     <tr>
                         <td class="number">巽 ４</td>
-                        <td>臨泣</td>
+                        <td class="meridian">臨泣</td>
                         <td class="channel">足少陽膽經</td>
                     </tr>
                     <tr>
                         <td class="number">震 ３</td>
-                        <td>外關</td>
+                        <td class="meridian">外關</td>
                         <td class="channel">手少陽三焦經</td>
                     </tr>
                 </table>
@@ -78,13 +76,13 @@
                     <tr>
                         <td>男</td>
                         <td class="number">坤 ２</td>
-                        <td>照海</td>
+                        <td class="meridian">照海</td>
                         <td class="channel">足少陰腎經</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td class="number">離 ９</td>
-                        <td>列缺</td>
+                        <td class="meridian">列缺</td>
                         <td class="channel">手太陰肺經</td>
                     </tr>
                     <tr>
@@ -94,61 +92,61 @@
                     <tr>
                         <td>女</td>
                         <td class="number">艮 ８</td>
-                        <td>內關</td>
+                        <td class="meridian">內關</td>
                         <td class="channel">手厥陰心包經</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td class="number">乾 ６</td>
-                        <td>公孫</td>
+                        <td class="meridian">公孫</td>
                         <td class="channel">足太陰脾經</td>
                     </tr>
                 </table>
                 <table id="linggui6" class="linggui">
                     <tr>
                         <td class="number">乾 ６</td>
-                        <td>公孫</td>
+                        <td class="meridian">公孫</td>
                         <td class="channel">足太陰脾經</td>
                     </tr>
                     <tr>
                         <td class="number">艮 ８</td>
-                        <td>內關</td>
+                        <td class="meridian">內關</td>
                         <td class="channel">手厥陰心包經</td>
                     </tr>
                 </table>
                 <table id="linggui7" class="linggui">
                     <tr>
                         <td class="number">兌 ７</td>
-                        <td>後溪</td>
+                        <td class="meridian">後溪</td>
                         <td class="channel">手太陽小腸經</td>
                     </tr>
                     <tr>
                         <td class="number">坎 １</td>
-                        <td>申脈</td>
+                        <td class="meridian">申脈</td>
                         <td class="channel">足太陽膀胱經</td>
                     </tr>
                 </table>
                 <table id="linggui8" class="linggui">
                     <tr>
                         <td class="number">艮 ８</td>
-                        <td>內關</td>
+                        <td class="meridian">內關</td>
                         <td class="channel">手厥陰心包經</td>
                     </tr>
                     <tr>
                         <td class="number">乾 ６</td>
-                        <td>公孫</td>
+                        <td class="meridian">公孫</td>
                         <td class="channel">足太陰脾經</td>
                     </tr>
                 </table>
                 <table id="linggui9" class="linggui">
                     <tr>
                         <td class="number">離 ９</td>
-                        <td>列缺</td>
+                        <td class="meridian">列缺</td>
                         <td class="channel">手太陰肺經</td>
                     </tr>
                     <tr>
                         <td class="number">坤 ２</td>
-                        <td>照海</td>
+                        <td class="meridian">照海</td>
                         <td class="channel">足少陰腎經</td>
                     </tr>
                 </table>
@@ -247,8 +245,8 @@
 
             // 計算一月一號到今天總共相差幾天
             var d = new Date();
-            var d0 = new Date(d.getFullYear() + '-01-01 12:00:00');
-            var d1 = new Date(d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + ' 12:00:00');
+            var d0 = new Date(d.getFullYear() + '-01-01T12:00:00');
+            var d1 = new Date(d.getFullYear() + '-' + (d.getMonth() < 9 ? '0' : '') + (d.getMonth() + 1) + '-' + d.getDate() + 'T12:00:00');
             var dd = parseInt((d1 - d0)/1000/60/60/24) + 1;
             
             // 取得年份後兩位數
@@ -261,7 +259,7 @@
 
             // 顯示日干支
             var ds = tiangan[n % 10] + dizhi[n % 12];
-            document.getElementById("dganzhi").innerText = ds + "日";
+            document.getElementById("ganzhi").innerText = ds + "日";
 
             // 顯示靈龜八法當前時辰的穴位
             var idx = Math.ceil(d.getHours() / 2) % 12;
